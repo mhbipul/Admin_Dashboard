@@ -4,11 +4,11 @@ import
  from 'react-icons/bs'
 
 
-const Header = () => {
+const Header = ( {openSideBar} ) => {
   return (
     <header className='header'>
       <div className='menu-icon'>
-        <BsJustify className='icon' />
+        <BsJustify className='icon' onClick={openSideBar} />
 
       </div>
       <div className='header-left'>
